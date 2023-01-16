@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class Gif extends Component {
-
   handleClick = () => {
     const { selectGif, id } = this.props;
     if (selectGif) {
@@ -12,10 +11,10 @@ class Gif extends Component {
   render() {
     const { id } = this.props;
     const src = `https://media.giphy.com/media/${id}/giphy.gif`
-    return(
+    return (
       <img src={src} alt="" className="gif" onClick={this.handleClick}/>
-    )
+    );
   }
-};
+}
 
 export default Gif;
