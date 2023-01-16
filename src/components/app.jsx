@@ -13,6 +13,8 @@ class App extends Component {
       gifs: [],
       selectedGifId: null
     }
+    this.search = this.search.bind(this);
+    this.selectGif = this.selectGif.bind(this);
   }
 
   selectGif = (id) => {
